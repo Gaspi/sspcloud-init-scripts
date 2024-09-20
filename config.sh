@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #configure bashrc to add aliases
-echo <<EOT > /etc/bash.bashrc
+sudo tee -a /etc/bash.bashrc <<EOT
 # kube aliases
 alias k='kubectl'
 alias kubetcl='kubectl'
