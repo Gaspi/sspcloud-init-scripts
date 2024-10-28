@@ -9,8 +9,6 @@ EOT
 
 code-server --install-extension ms-python.mypy-type-checker
 
-mc cp -r s3/projet-llm-insee-open-data/data/chroma_database/chroma_db/ ~/work/data/chroma_db
-
 cd ~/work/
 git clone https://github.com/InseeFrLab/llm-open-data-insee.git
 cd llm-open-data-insee
@@ -20,3 +18,5 @@ pip install pre-commit
 pre-commit install
 
 pip install -r requirements-dev.txt
+
+mc cp -r s3/projet-llm-insee-open-data/data/chroma_database/chroma_db/ ~/work/llm-open-data-insee/data/chroma_db
