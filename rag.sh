@@ -9,6 +9,7 @@ export EMB_DEVICE=cpu
 EOT
 
 code-server --install-extension charliermarsh.ruff
+code-server --disable-extensions ms-python.flake8
 code-server --install-extension ms-python.mypy-type-checker
 
 cd ~/work/
