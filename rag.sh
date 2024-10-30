@@ -3,8 +3,8 @@
 sudo tee -a /etc/bash.bashrc <<EOT
 # Project default values
 export S3_BUCKET=projet-llm-insee-open-data
-export EMB_MODEL_NAME=OrdalieTech/Solon-embeddings-large-0.1
-export LLM_MODEL_NAME=mistralai/Mistral-7B-Instruct-v0.2
+export EMB_MODEL=OrdalieTech/Solon-embeddings-large-0.1
+export LLM_MODEL=mistralai/Mistral-7B-Instruct-v0.2
 export EMB_DEVICE=cpu
 EOT
 
