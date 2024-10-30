@@ -8,6 +8,7 @@ export LLM_MODEL=mistralai/Mistral-7B-Instruct-v0.2
 export EMB_DEVICE=cpu
 EOT
 
+code-server --install-extension charliermarsh.ruff
 code-server --install-extension ms-python.mypy-type-checker
 
 cd ~/work/
