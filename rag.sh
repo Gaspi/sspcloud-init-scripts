@@ -8,8 +8,11 @@ export LLM_MODEL=mistralai/Mistral-7B-Instruct-v0.2
 export EMB_DEVICE=cpu
 EOT
 
+# Replace default flake8 linter with project-preconfigured ruff
 code-server --install-extension charliermarsh.ruff
 code-server --disable-extensions ms-python.flake8
+
+# Install type checking extension
 code-server --install-extension ms-python.mypy-type-checker
 
 cd ~/work/
