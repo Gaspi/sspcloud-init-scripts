@@ -9,8 +9,8 @@ export EMB_DEVICE=cpu
 EOT
 
 # Replace default flake8 linter with project-preconfigured ruff
+code-server --uninstall-extension ms-python.flake8
 code-server --install-extension charliermarsh.ruff
-code-server --disable-extensions ms-python.flake8
 
 # Install type checking extension
 code-server --install-extension ms-python.mypy-type-checker
