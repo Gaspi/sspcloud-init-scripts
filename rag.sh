@@ -2,10 +2,10 @@
 
 sudo tee -a /etc/bash.bashrc <<EOT
 # Project default values
-export S3_BUCKET=projet-llm-insee-open-data
-export EMB_MODEL=OrdalieTech/Solon-embeddings-large-0.1
-export LLM_MODEL=mistralai/Mistral-7B-Instruct-v0.2
-export EMB_DEVICE=cpu
+export RAG_S3_BUCKET=projet-llm-insee-open-data
+export RAG_EMB_MODEL=OrdalieTech/Solon-embeddings-large-0.1
+export RAG_LLM_MODEL=mistralai/Mistral-7B-Instruct-v0.2
+export RAG_EMB_DEVICE=cpu
 EOT
 
 # Replace default flake8 linter with project-preconfigured ruff
