@@ -26,6 +26,7 @@ git pull
 
 # Install requirements and run linting on project
 pip install -r requirements-dev.txt
+mypy --install-types
 pip install pre-commit
 pre-commit install
 pre-commit run --all-files
