@@ -1,5 +1,8 @@
 #!/bin/sh
 
+sudo apt update -y
+sudo apt install tree -y
+
 sudo tee -a /etc/bash.bashrc <<EOT
 # Project default values
 export RAG_S3_BUCKET=projet-llm-insee-open-data
