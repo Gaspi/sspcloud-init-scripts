@@ -32,7 +32,7 @@ pip install -r requirements-dev.txt
 mypy --install-types
 pip install pre-commit
 pre-commit install
-pre-commit run --all-files
+# pre-commit run --all-files
 
 # Prepare
 mc cp -r s3/projet-llm-insee-open-data/data/chroma_database/chroma_db/ ~/work/data/chroma_db
