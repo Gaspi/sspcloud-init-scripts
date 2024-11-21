@@ -23,16 +23,12 @@ cd ~/work/
 git clone https://github.com/InseeFrLab/llm-open-data-insee.git
 cd llm-open-data-insee
 
-# Move to branch
-git checkout expl-gfy
-git pull
-
 # Install requirements and run linting on project
 pip install -r requirements-dev.txt
 mypy --install-types
 pip install pre-commit
 pre-commit install
-# pre-commit run --all-files
+pre-commit run --all-files
 
 # Prepare
 mc cp -r s3/projet-llm-insee-open-data/data/chroma_database/chroma_db/ ~/work/data/chroma_db
