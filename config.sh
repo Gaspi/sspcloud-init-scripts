@@ -44,3 +44,5 @@ git clone https://github.com/InseeFrLab/helm-charts-shiny-apps.git
 git clone https://github.com/InseeFrLab/helm-charts-miscellaneous.git
 git clone https://inseefrlab.github.io/helm-charts-datascience
 
+ls -d **/charts/* | xargs -i{} bash -c "cd charts/{} && helm dep update"
+
