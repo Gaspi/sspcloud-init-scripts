@@ -22,6 +22,6 @@ cd llm-open-data-insee
 uv pip install -r pyproject.toml --system
 
 # Install and run linting on project
-uv pip install pre-commit
+uv pip install pre-commit --system
 pre-commit install
 pre-commit run --all-files
